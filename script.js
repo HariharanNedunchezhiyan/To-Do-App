@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
 
     const saveTaskToLocalStorage = () => {
-        const tasks = Arrays.from(taskList.querySelectorAll('li')).map(li => ({
+        const tasks = Array.from(taskList.querySelectorAll('li')).map(li => ({
             text : li.querySelector('span').textContent,
             completed : li.querySelector('.checkbox').checked
         }) );
